@@ -44,8 +44,8 @@ public class SecondsAndMinutesChallenge {
     }
 
     public static void main(String[] args) {
-        System.out.println(getDurationString(90, 25));
-        System.out.println(getDurationString(5225));
-        System.out.println(getDurationString(-41));
+        System.out.println(getDurationString(90, 25));          // 01h 30m 25s
+        System.out.println(getDurationString(5225));            // 01h 27m 05s
+        System.out.println(getDurationString(-41));             // Invalid value
     }
 }
