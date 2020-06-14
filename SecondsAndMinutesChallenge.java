@@ -5,7 +5,7 @@ public class SecondsAndMinutesChallenge {
     private static final String INVALID_VALUE_MESSAGE = "Invalid value";
         // 把常用的message定义为常量（final不会改变；大写字母，好辨认）
 
-    private static String getDurationString(int minutes, int seconds) {
+    private static String getDurationString(int minutes, int seconds) {                 // 定义第一个method 参数（分，秒）
         if (minutes < 0 || (seconds < 0 || seconds > 59)) {
             return INVALID_VALUE_MESSAGE;
         }
@@ -32,7 +32,7 @@ public class SecondsAndMinutesChallenge {
         return hoursString + " " + minutesString + " " + secondsString;
     }
 
-    private static String getDurationString(int seconds) {
+    private static String getDurationString(int seconds) {                                   // 定义第二个method 参数（秒）
         if (seconds < 0) {
             return INVALID_VALUE_MESSAGE;
         }
